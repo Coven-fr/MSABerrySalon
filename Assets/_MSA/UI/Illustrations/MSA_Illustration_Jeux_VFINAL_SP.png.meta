@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: a403f33ec62e77c4a9333f26782c3409
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2892657707313658975
+    second: MSA_Illustration_Jeux_VFINAL_SP_0
+  - first:
+      213: 1295183322582493127
+    second: MSA_Illustration_Jeux_VFINAL_SP_1
+  - first:
+      213: 3895709987338776581
+    second: MSA_Illustration_Jeux_VFINAL_SP_2
+  - first:
+      213: -8692637189367470386
+    second: MSA_Illustration_Jeux_VFINAL_SP_3
+  - first:
+      213: -3099710933153788553
+    second: MSA_Illustration_Jeux_VFINAL_SP_4
+  - first:
+      213: 3857266236206462723
+    second: MSA_Illustration_Jeux_VFINAL_SP_5
+  - first:
+      213: 6451229427228532776
+    second: MSA_Illustration_Jeux_VFINAL_SP_6
+  - first:
+      213: 219964472009453680
+    second: MSA_Illustration_Jeux_VFINAL_SP_7
+  - first:
+      213: -4692458956516160218
+    second: MSA_Illustration_Jeux_VFINAL_SP_8
+  - first:
+      213: -4685752536529719136
+    second: MSA_Illustration_Jeux_VFINAL_SP_9
+  - first:
+      213: 429045884087313099
+    second: MSA_Illustration_Jeux_VFINAL_SP_10
+  - first:
+      213: 3823578178811944999
+    second: MSA_Illustration_Jeux_VFINAL_SP_11
+  - first:
+      213: -6822640379463639542
+    second: MSA_Illustration_Jeux_VFINAL_SP_12
+  - first:
+      213: 4204345987152721146
+    second: MSA_Illustration_Jeux_VFINAL_SP_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_0
+      rect:
+        serializedVersion: 2
+        x: 238
+        y: 41
+        width: 8931
+        height: 5202
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a306c224273bd7d0800000000000000
+      internalID: -2892657707313658975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_1
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 5016
+        width: 369
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c72a85ae5a69f110800000000000000
+      internalID: 1295183322582493127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_2
+      rect:
+        serializedVersion: 2
+        x: 8824
+        y: 4793
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 500f447d797501630800000000000000
+      internalID: 3895709987338776581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_3
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 4223
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec6e666288c8d5780800000000000000
+      internalID: -8692637189367470386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_4
+      rect:
+        serializedVersion: 2
+        x: 8774
+        y: 4349
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d49fa445d9bf4d0800000000000000
+      internalID: -3099710933153788553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_5
+      rect:
+        serializedVersion: 2
+        x: 8867
+        y: 3798
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 307b1358433c78530800000000000000
+      internalID: 3857266236206462723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_6
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 3082
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 820e086ebfe578950800000000000000
+      internalID: 6451229427228532776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_7
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 2620
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 070745995887d0300800000000000000
+      internalID: 219964472009453680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_8
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 2201
+        width: 405
+        height: 296
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 62d01c5d07901eeb0800000000000000
+      internalID: -4692458956516160218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_9
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 1490
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a0b2cae4ecd8feb0800000000000000
+      internalID: -4685752536529719136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_10
+      rect:
+        serializedVersion: 2
+        x: 8880
+        y: 1662
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc22e5955f644f500800000000000000
+      internalID: 429045884087313099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_11
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 810
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720650f6814101530800000000000000
+      internalID: 3823578178811944999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_12
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 98
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0e55d709bc1151a0800000000000000
+      internalID: -6822640379463639542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Illustration_Jeux_VFINAL_SP_13
+      rect:
+        serializedVersion: 2
+        x: 4057
+        y: 36
+        width: 405
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af4b3155666d85a30800000000000000
+      internalID: 4204345987152721146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MSA_Illustration_Jeux_VFINAL_SP_0: -2892657707313658975
+      MSA_Illustration_Jeux_VFINAL_SP_1: 1295183322582493127
+      MSA_Illustration_Jeux_VFINAL_SP_10: 429045884087313099
+      MSA_Illustration_Jeux_VFINAL_SP_11: 3823578178811944999
+      MSA_Illustration_Jeux_VFINAL_SP_12: -6822640379463639542
+      MSA_Illustration_Jeux_VFINAL_SP_13: 4204345987152721146
+      MSA_Illustration_Jeux_VFINAL_SP_2: 3895709987338776581
+      MSA_Illustration_Jeux_VFINAL_SP_3: -8692637189367470386
+      MSA_Illustration_Jeux_VFINAL_SP_4: -3099710933153788553
+      MSA_Illustration_Jeux_VFINAL_SP_5: 3857266236206462723
+      MSA_Illustration_Jeux_VFINAL_SP_6: 6451229427228532776
+      MSA_Illustration_Jeux_VFINAL_SP_7: 219964472009453680
+      MSA_Illustration_Jeux_VFINAL_SP_8: -4692458956516160218
+      MSA_Illustration_Jeux_VFINAL_SP_9: -4685752536529719136
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468e71a82275fdf41b90fbeabf52565e, type: 3}
+  m_Name: "Quiz - M\xE9decin du travail"
+  m_EditorClassIdentifier: Assembly-CSharp::QuizData
+  question: "Le m\xE9decin du travail peut m\u2019accompagner en :"
+  answers:
+  - id: 1
+    text: "Prescrivant des traitements adapt\xE9s"
+    isCorrect: 0
+  - id: 2
+    text: "Analysant les causes m\xE9dicales de l'accident du travail et l'impact
+      \xE9ventuel des conditions collectives"
+    isCorrect: 1
+  - id: 3
+    text: "Assurant un suivi m\xE9dical et\_m'orientant"
+    isCorrect: 1
+  - id: 4
+    text: "D\xE9cidant d\u2019am\xE9nagements ou de restrictions"
+    isCorrect: 1
+  explanation: "La d\xE9claration de l'accident est enregistr\xE9e. L'administration
+    missionne imm\xE9diatement un conseiller PRP pour investiguer directement sur
+    mon entreprise."

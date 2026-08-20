@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94d7422c4f9ea9242a92694ef2c6d8a9, type: 3}
+  m_Name: Employeur
+  m_EditorClassIdentifier: Assembly-CSharp::RoleData
+  intro: {fileID: 11400000, guid: 1627c0b61aa177b4db735326e64677b4, type: 2}
+  roleName: Test
+  elements:
+  - id: 1
+    title: "P\xF4le Sant\xE9 au Travail 1"
+    description: 
+    quizData: {fileID: 11400000, guid: 884d220c4edbcf041aa9c4111f6b4add, type: 2}
+  - id: 2
+    title: "P\xF4le PRP"
+    description: 
+    quizData: {fileID: 11400000, guid: 0938b3a1c25374243857b94a2a12cce7, type: 2}
+  - id: 3
+    title: "P\xF4le Sant\xE9 au Travail 2"
+    description: 
+    quizData: {fileID: 11400000, guid: c86aba68542da4642a3990146d629933, type: 2}
+  - id: 4
+    title: "M\xE9decin du travail"
+    description: 
+    quizData: {fileID: 11400000, guid: 4d38e70a845ddf54f9469bac828c463a, type: 2}

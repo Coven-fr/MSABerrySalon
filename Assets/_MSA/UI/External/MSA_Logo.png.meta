@@ -1,0 +1,1118 @@
+fileFormatVersion: 2
+guid: 96a61acaf5e97a94fb80c26e70608f4f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4387582205074125483
+    second: MSA_Logo_0
+  - first:
+      213: -2835743832655642224
+    second: MSA_Logo_1
+  - first:
+      213: -4990249858441398588
+    second: MSA_Logo_2
+  - first:
+      213: -4984367267901993385
+    second: MSA_Logo_3
+  - first:
+      213: -9057862450575182568
+    second: MSA_Logo_4
+  - first:
+      213: 500660850489178486
+    second: MSA_Logo_5
+  - first:
+      213: -5284376361562264007
+    second: MSA_Logo_6
+  - first:
+      213: -6437379695552478861
+    second: MSA_Logo_7
+  - first:
+      213: -1982849706827159347
+    second: MSA_Logo_8
+  - first:
+      213: 2733691566289739273
+    second: MSA_Logo_9
+  - first:
+      213: -6365695297096486676
+    second: MSA_Logo_10
+  - first:
+      213: 696241075762083240
+    second: MSA_Logo_11
+  - first:
+      213: -2888419057308287065
+    second: MSA_Logo_12
+  - first:
+      213: -7412839844922740914
+    second: MSA_Logo_13
+  - first:
+      213: -6196759447591360465
+    second: MSA_Logo_14
+  - first:
+      213: -8633186007323522608
+    second: MSA_Logo_15
+  - first:
+      213: -1734220309348703425
+    second: MSA_Logo_16
+  - first:
+      213: -3725090422771735078
+    second: MSA_Logo_17
+  - first:
+      213: -6095121620119859986
+    second: MSA_Logo_18
+  - first:
+      213: -4618469180478176408
+    second: MSA_Logo_19
+  - first:
+      213: -8343708900643451328
+    second: MSA_Logo_20
+  - first:
+      213: 5785417715499873795
+    second: MSA_Logo_21
+  - first:
+      213: -763819046371511183
+    second: MSA_Logo_22
+  - first:
+      213: 2807002499220188826
+    second: MSA_Logo_23
+  - first:
+      213: 3867303189050711480
+    second: MSA_Logo_24
+  - first:
+      213: -6560053575183312241
+    second: MSA_Logo_25
+  - first:
+      213: -3322949373114213653
+    second: MSA_Logo_26
+  - first:
+      213: 5335147585101606773
+    second: MSA_Logo_27
+  - first:
+      213: -690094382450604174
+    second: MSA_Logo_28
+  - first:
+      213: 4020462327830689424
+    second: MSA_Logo_29
+  - first:
+      213: -2111290329081744467
+    second: MSA_Logo_30
+  - first:
+      213: 610909968732053155
+    second: MSA_Logo_31
+  - first:
+      213: 4117950598385835129
+    second: MSA_Logo_32
+  - first:
+      213: -4894679697710573490
+    second: MSA_Logo_33
+  - first:
+      213: -3479563329490057071
+    second: MSA_Logo_34
+  - first:
+      213: -1290646024306163173
+    second: MSA_Logo_35
+  - first:
+      213: -4996806817415843068
+    second: MSA_Logo_36
+  - first:
+      213: -4898058559838883363
+    second: MSA_Logo_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MSA_Logo_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 5
+        width: 372
+        height: 362
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55d4bbb1b3d2c13c0800000000000000
+      internalID: -4387582205074125483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_1
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 359
+        width: 372
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0914e84320a65a8d0800000000000000
+      internalID: -2835743832655642224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_2
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 294
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c6382771321fbab0800000000000000
+      internalID: -4990249858441398588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_3
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 294
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75e0e9ec068f3dab0800000000000000
+      internalID: -4984367267901993385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_4
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 294
+        width: 39
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 815fd1187120c4280800000000000000
+      internalID: -9057862450575182568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_5
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 294
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6793a521464b2f600800000000000000
+      internalID: 500660850489178486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_6
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 294
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93e2c9d62bf1aa6b0800000000000000
+      internalID: -5284376361562264007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_7
+      rect:
+        serializedVersion: 2
+        x: 605
+        y: 335
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 371484a0645d9a6a0800000000000000
+      internalID: -6437379695552478861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_8
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 270
+        width: 372
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc8649d72b08b74e0800000000000000
+      internalID: -1982849706827159347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_9
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 206
+        width: 28
+        height: 53
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e5e2eeef500f520800000000000000
+      internalID: 2733691566289739273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_10
+      rect:
+        serializedVersion: 2
+        x: 459
+        y: 205
+        width: 39
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce0703caad188a7a0800000000000000
+      internalID: -6365695297096486676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_11
+      rect:
+        serializedVersion: 2
+        x: 505
+        y: 206
+        width: 60
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a5b5dec19b89a900800000000000000
+      internalID: 696241075762083240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_12
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 247
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7afbbaebb264ae7d0800000000000000
+      internalID: -2888419057308287065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_13
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 206
+        width: 15
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4fa48a9f6d402990800000000000000
+      internalID: -7412839844922740914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_14
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 206
+        width: 15
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2865cf3d10b00aa0800000000000000
+      internalID: -6196759447591360465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_15
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 205
+        width: 40
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d9cb912113c03880800000000000000
+      internalID: -8633186007323522608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_16
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 206
+        width: 15
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33a00321dfcee7e0800000000000000
+      internalID: -1734220309348703425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_17
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 182
+        width: 372
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad52b723ff1dd4cc0800000000000000
+      internalID: -3725090422771735078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_18
+      rect:
+        serializedVersion: 2
+        x: 504
+        y: 117
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eecc3f90e27c96ba0800000000000000
+      internalID: -6095121620119859986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 159
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 863428300c6e7efb0800000000000000
+      internalID: -4618469180478176408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_20
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 117
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04ec1e336f0353c80800000000000000
+      internalID: -8343708900643451328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_21
+      rect:
+        serializedVersion: 2
+        x: 433
+        y: 117
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3063f9182cee94050800000000000000
+      internalID: 5785417715499873795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_22
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 117
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174395ccf9e5665f0800000000000000
+      internalID: -763819046371511183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_23
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 117
+        width: 28
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9e27a1a6e974f620800000000000000
+      internalID: 2807002499220188826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_24
+      rect:
+        serializedVersion: 2
+        x: 566
+        y: 117
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bd5a16b2cb6ba530800000000000000
+      internalID: 3867303189050711480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_25
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 117
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8adaafa70206f4a0800000000000000
+      internalID: -6560053575183312241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_26
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 117
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bea9be0a62382e1d0800000000000000
+      internalID: -3322949373114213653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_27
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 93
+        width: 372
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57fa34a36704a0a40800000000000000
+      internalID: 5335147585101606773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_28
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 28
+        width: 28
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2770a80c0da4c66f0800000000000000
+      internalID: -690094382450604174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_29
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 70
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09630339f2d8bc730800000000000000
+      internalID: 4020462327830689424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_30
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 28
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da37d5db1a033b2e0800000000000000
+      internalID: -2111290329081744467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_31
+      rect:
+        serializedVersion: 2
+        x: 473
+        y: 28
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3aed40c31636a7800800000000000000
+      internalID: 610909968732053155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_32
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 29
+        width: 41
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97c156b5046e52930800000000000000
+      internalID: 4117950598385835129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_33
+      rect:
+        serializedVersion: 2
+        x: 591
+        y: 28
+        width: 15
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e4815a08fba921cb0800000000000000
+      internalID: -4894679697710573490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_34
+      rect:
+        serializedVersion: 2
+        x: 613
+        y: 28
+        width: 40
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 198054c569b16bfc0800000000000000
+      internalID: -3479563329490057071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_35
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 28
+        width: 41
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12067e6744b61ee0800000000000000
+      internalID: -1290646024306163173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_36
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 28
+        width: 38
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 403bdac7ca6c7aab0800000000000000
+      internalID: -4996806817415843068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MSA_Logo_37
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 5
+        width: 372
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1fdbbd0b9960cb0800000000000000
+      internalID: -4898058559838883363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      MSA_Logo_0: -4387582205074125483
+      MSA_Logo_1: -2835743832655642224
+      MSA_Logo_10: -6365695297096486676
+      MSA_Logo_11: 696241075762083240
+      MSA_Logo_12: -2888419057308287065
+      MSA_Logo_13: -7412839844922740914
+      MSA_Logo_14: -6196759447591360465
+      MSA_Logo_15: -8633186007323522608
+      MSA_Logo_16: -1734220309348703425
+      MSA_Logo_17: -3725090422771735078
+      MSA_Logo_18: -6095121620119859986
+      MSA_Logo_19: -4618469180478176408
+      MSA_Logo_2: -4990249858441398588
+      MSA_Logo_20: -8343708900643451328
+      MSA_Logo_21: 5785417715499873795
+      MSA_Logo_22: -763819046371511183
+      MSA_Logo_23: 2807002499220188826
+      MSA_Logo_24: 3867303189050711480
+      MSA_Logo_25: -6560053575183312241
+      MSA_Logo_26: -3322949373114213653
+      MSA_Logo_27: 5335147585101606773
+      MSA_Logo_28: -690094382450604174
+      MSA_Logo_29: 4020462327830689424
+      MSA_Logo_3: -4984367267901993385
+      MSA_Logo_30: -2111290329081744467
+      MSA_Logo_31: 610909968732053155
+      MSA_Logo_32: 4117950598385835129
+      MSA_Logo_33: -4894679697710573490
+      MSA_Logo_34: -3479563329490057071
+      MSA_Logo_35: -1290646024306163173
+      MSA_Logo_36: -4996806817415843068
+      MSA_Logo_37: -4898058559838883363
+      MSA_Logo_4: -9057862450575182568
+      MSA_Logo_5: 500660850489178486
+      MSA_Logo_6: -5284376361562264007
+      MSA_Logo_7: -6437379695552478861
+      MSA_Logo_8: -1982849706827159347
+      MSA_Logo_9: 2733691566289739273
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

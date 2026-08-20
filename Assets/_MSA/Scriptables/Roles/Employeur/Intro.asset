@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3435c3f319e0446991ee815d5225ea, type: 3}
+  m_Name: Intro
+  m_EditorClassIdentifier: Assembly-CSharp::IntroData
+  messages:
+  - "Vous incarnez Marc, 48 ans, employeur en maraichage avec 6 salari\xE9s permanents
+    ainsi que des saisonniers."
+  - "Apr\xE8s une glissade pr\xE8s de la zone de lavage, sans blessure grave, vous
+    r\xE9alisez que l\u2019accident aurait pu \xEAtre plus s\xE9rieux."
+  - "Vous contactez la MSA pour sensibiliser les salari\xE9s \xE0 la pr\xE9vention
+    des risques professionnels."
