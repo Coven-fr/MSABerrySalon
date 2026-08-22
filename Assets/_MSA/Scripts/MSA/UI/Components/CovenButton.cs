@@ -10,6 +10,7 @@ namespace Coven.MSA.UI
     public class CovenButton : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler
     {
         [SerializeField] bool interactable = true;
+        [SerializeField] bool animated = true;
 
         [Space(10)]
 
@@ -43,7 +44,7 @@ namespace Coven.MSA.UI
 
         void Update()
         {
-            if (!isPressed)
+            if (!isPressed || !animated)
                 return;
 
             UpdateFill(Time.deltaTime / requiredHoldTime);
@@ -56,20 +57,27 @@ namespace Coven.MSA.UI
 
             isPressed = true;
 
-            float time = fillRect != null ? requiredHoldTime : 0.25f;
+            if (animated)
+            {
+                float time = fillRect != null ? requiredHoldTime : 0.25f;
 
-            AnimClick(time);
+                AnimClick(time);
+            }
+            else
+            {
+                OnComplete();
+            }            
         }
 
         public void OnPointerUp(PointerEventData eventData)
         {
-            if (fillRect != null)
+            if (animated && fillRect != null)
                 ResetButton();
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            if (fillRect != null)
+            if (animated && fillRect != null)
                 ResetButton();
         }
 
@@ -80,9 +88,12 @@ namespace Coven.MSA.UI
             if (usesCount == usesBeforeDeactivateText)
                 HideText();
 
-            ResetButton();
+            if(animated)
+                ResetButton();
 
             onClick?.Invoke();
+
+            isPressed = false;
         }
 
         void AnimClick(float time)
@@ -102,8 +113,6 @@ namespace Coven.MSA.UI
 
         void ResetButton()
         {
-            isPressed = false;
-
             imageRect.DOKill();
 
             imageRect.transform.DOScale(1f, 0.1f)

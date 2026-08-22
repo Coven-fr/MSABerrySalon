@@ -19,3 +19,23 @@ MonoBehaviour:
     r\xE9alisez que l\u2019accident aurait pu \xEAtre plus s\xE9rieux."
   - "Vous contactez la MSA pour sensibiliser les salari\xE9s \xE0 la pr\xE9vention
     des risques professionnels."
+  steps:
+  - messages:
+    - "Vous incarnez Marc, 48 ans, employeur en maraichage avec 6 salari\xE9s permanents
+      ainsi que des saisonniers."
+    - "Apr\xE8s une glissade pr\xE8s de la zone de lavage, sans blessure grave, vous
+      r\xE9alisez que l\u2019accident aurait pu \xEAtre plus s\xE9rieux."
+    - "Vous contactez la MSA pour sensibiliser les salari\xE9s \xE0 la pr\xE9vention
+      des risques professionnels."
+  - messages: []
+  - messages:
+    - "L\u2019assistant\xB7e administratif.ve re\xE7oit la demande, identifie le
+      besoin et oriente vers un.e m\xE9decin ou un.e infirmier.\xE8re."
+  - messages:
+    - "L\u2019assistant\xB7e administratif.ve re\xE7oit la demande, identifie le
+      besoin et oriente vers avec un.e conseiller.\xE8re en Pr\xE9vention."
+  - messages:
+    - "L\u2019assistant\xB7e administratif.ve re\xE7oit la demande, et m'indique
+      que cette demande li\xE9e \xE0 un accident du travail rel\xE8ve d'abord du
+      terrain. Elle me r\xE9oriente vers le p\xF4le Pr\xE9vention des Risques Professionnels
+      (PRP)."

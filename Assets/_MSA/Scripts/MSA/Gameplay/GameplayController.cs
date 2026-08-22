@@ -14,8 +14,6 @@ public class GameplayController : Singleton<GameplayController>
 
     private void Start()
     {
-        //zoomAndPan.Activate();
-
         introEvent.Set(roleData.Intro);
 
         gameState = GameState.Intro;
@@ -42,7 +40,7 @@ public class GameplayController : Singleton<GameplayController>
 
                 break;
             case GameState.Game:
-
+                zoomAndPan.Activate();
                 break;
             case GameState.End:
 
