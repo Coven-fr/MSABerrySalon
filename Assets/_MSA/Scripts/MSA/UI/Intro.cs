@@ -1,13 +1,9 @@
-using Coven.MSA.Core.UI;
 using Coven.MSA.UI;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CanvasGroup))]
-public class Intro : MonoBehaviour
+public class Intro : GameScreen
 {
-    CanvasGroup canvas;
-
     IntroData introData;
 
     [SerializeField]List<IntroStep> steps;
@@ -19,13 +15,6 @@ public class Intro : MonoBehaviour
     [Header("Events")]
     [SerializeField] IntroEventChannel introEvent;
 
-    private void Awake()
-    {
-        canvas = GetComponent<CanvasGroup>();
-
-        CanvasVisibility.HideCanvas(canvas);
-    }
-
     void Set(IntroData data)
     {
         introData = data;
@@ -33,7 +22,7 @@ public class Intro : MonoBehaviour
 
         SwitchStep();
 
-        CanvasVisibility.ShowCanvas(canvas);
+        Show();
     }
 
     void NextStep()
@@ -63,9 +52,9 @@ public class Intro : MonoBehaviour
 
     void Close()
     {
-        CanvasVisibility.HideCanvas(canvas);
+        Hide();
 
-        GameplayController.instance.Next();
+        AppController.instance.Next();
     }
 
     private void OnEnable()

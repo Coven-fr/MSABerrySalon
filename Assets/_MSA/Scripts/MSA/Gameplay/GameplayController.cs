@@ -1,58 +1,54 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class GameplayController : Singleton<GameplayController>
 {
-    GameState gameState;
+    RoleData selectedRole;
 
-    [SerializeField] RoleData roleData;
-
-    [SerializeField] ZoomAndPan zoomAndPan;
+    [SerializeField] List<GameObject> gameElements;
 
     [Header("Events")]
-    [SerializeField] IntroEventChannel introEvent;
     [SerializeField] QuizEventChannel quizEvent;
 
     private void Start()
     {
-        introEvent.Set(roleData.Intro);
-
-        gameState = GameState.Intro;
+        DeactivateGameStuff();
     }
 
-    public void Next()
+    public void SetRole(RoleData data)
     {
-        if (gameState == GameState.RoleSelector)
-            SwitchGameState(GameState.Intro);
-        else if (gameState == GameState.Intro)
-            SwitchGameState(GameState.Game);
-        else if (gameState == GameState.Game)
-            SwitchGameState(GameState.End);
+        selectedRole = data;
     }
 
-    void SwitchGameState(GameState newState)
+    public void StartGame()
     {
-        switch (newState)
+        ActivateGameStuff();
+    }
+
+    public void EndGame()
+    {
+        DeactivateGameStuff();
+    }
+
+    void ActivateGameStuff()
+    {
+        foreach (var gameElement in gameElements)
         {
-            case GameState.RoleSelector:
-
-                break;
-            case GameState.Intro:
-
-                break;
-            case GameState.Game:
-                zoomAndPan.Activate();
-                break;
-            case GameState.End:
-
-                break;
+            gameElement.SetActive(true);
         }
+    }
 
-        gameState = newState;
+    void DeactivateGameStuff()
+    {
+        foreach (var gameElement in gameElements)
+        {
+            gameElement.SetActive(false);
+        }
     }
 
     public void SelectElement(Spot spot)
     {
-        foreach(var element in roleData.Elements)
+        foreach(var element in selectedRole.Elements)
         {
             if (element.ID == spot.ID)
                 quizEvent.Set(element.QuizData);

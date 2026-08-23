@@ -1,5 +1,7 @@
-public enum GameState
+public enum AppState
 {
+    Home,
+    Explanation,
     RoleSelector,
     Intro,
     Game,

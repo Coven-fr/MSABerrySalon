@@ -1,13 +1,10 @@
-using Coven.MSA.Core.UI;
 using Coven.MSA.UI;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class QuizUI : MonoBehaviour
+public class QuizUI : GameScreen
 {
-    [SerializeField] CanvasGroup canvas;
-
     [SerializeField] TextMeshProUGUI questionText;
 
     [Space(10)]
@@ -26,10 +23,8 @@ public class QuizUI : MonoBehaviour
     [Header("Events")]
     [SerializeField] QuizEventChannel quizEvent;
 
-    private void Awake()
+    private void Start()
     {
-        CanvasVisibility.HideCanvas(canvas);
-
         continueButton.onClick.AddListener(Close);
     }
 
@@ -51,7 +46,7 @@ public class QuizUI : MonoBehaviour
 
         continueButton.gameObject.SetActive(false);
 
-        CanvasVisibility.ShowCanvas(canvas);
+        Show();
     }
 
     void OnSelect(QuizButton button)
@@ -79,7 +74,7 @@ public class QuizUI : MonoBehaviour
 
     void Close()
     {
-        CanvasVisibility.HideCanvas(canvas);
+        Hide();
 
         questionText.text = "";
 

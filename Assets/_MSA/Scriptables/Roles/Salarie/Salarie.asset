@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94d7422c4f9ea9242a92694ef2c6d8a9, type: 3}
-  m_Name: Employeur
+  m_Name: Salarie
   m_EditorClassIdentifier: Assembly-CSharp::RoleData
-  role: 1
-  intro: {fileID: 11400000, guid: 1627c0b61aa177b4db735326e64677b4, type: 2}
+  role: 0
+  intro: {fileID: 11400000, guid: f6d9a9949b2b3c64295b21a23628d25b, type: 2}
   elements:
   - id: 1
     title: "P\xF4le Sant\xE9 au Travail 1"

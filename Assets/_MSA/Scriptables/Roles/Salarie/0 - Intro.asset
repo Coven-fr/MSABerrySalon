@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa3435c3f319e0446991ee815d5225ea, type: 3}
+  m_Name: 0 - Intro
+  m_EditorClassIdentifier: Assembly-CSharp::IntroData
+  steps:
+  - messages:
+    - "Nadia, salari\xE9e viticole est en arr\xEAt de travail suite l'apparition
+      de douleurs li\xE9es \xE0 son activit\xE9 professionnelle."
+    - "Elle ressent des douleurs \xE0 l\u2019\xE9paule et au poignet. Ses gestes
+      sont moins fluides et certaines postures plus contraignantes."
+    - "Elle en parle \xE0 l\u2019infirmier.\xE8re du p\xF4le Sant\xE9 au travail
+      pour savoir si son poste peut \xEAtre adapt\xE9 avant que la situation ne s\u2019aggrave."
+  - messages: []
+  - messages:
+    - "L\u2019assistant\xB7e administratif.ve re\xE7oit la demande, identifie le
+      besoin et oriente vers un.e m\xE9decin ou un.e infirmier.\xE8re."
+  - messages:
+    - "L\u2019assistant\xB7e administratif.ve re\xE7oit la demande, identifie le
+      besoin et oriente vers avec un.e conseiller.\xE8re en Pr\xE9vention."
+  - messages:
+    - "L\u2019assistant\xB7e administratif\xB7ve re\xE7oit la demande, et m'indique
+      que cette demande li\xE9e \xE0 un suivi de sant\xE9 rel\xE8ve d'abord du p\xF4le
+      sant\xE9 au travail."
