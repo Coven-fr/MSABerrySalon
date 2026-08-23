@@ -14,4 +14,10 @@ public class RoleData : ScriptableObject
 
     [SerializeField] List<ElementContent> elements;
     public List<ElementContent> Elements => elements;
+
+    [Space(10)]
+
+    [TextArea(2, 10)]
+    [SerializeField] string endText;
+    public string EndText => endText;
 }

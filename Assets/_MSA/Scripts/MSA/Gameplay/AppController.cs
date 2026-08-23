@@ -51,4 +51,9 @@ public class AppController : Singleton<AppController>
             }
         }
     }
+
+    public void BackRoleSelector()
+    {
+        SwitchGameState(AppState.RoleSelector);
+    }
 }

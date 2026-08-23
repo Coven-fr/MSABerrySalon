@@ -16,18 +16,34 @@ MonoBehaviour:
   intro: {fileID: 11400000, guid: f6d9a9949b2b3c64295b21a23628d25b, type: 2}
   elements:
   - id: 1
-    title: "P\xF4le Sant\xE9 au Travail 1"
-    description: 
     quizData: {fileID: 11400000, guid: 884d220c4edbcf041aa9c4111f6b4add, type: 2}
+    resultsData:
+      title: "Rendez-vous avec le p\xF4le sant\xE9 au travail"
+      content: "Le dossier de Nadia est d\xE9sormais enregistr\xE9 et ses droits
+        sont ouverts. Pour comprendre l'origine de ses douleurs sur l'exploitation,
+        l'agent d'accueil l'oriente vers <b>le p\xF4le sant\xE9 au travail</b>."
+      Score: 0
   - id: 2
-    title: "P\xF4le PRP"
-    description: 
     quizData: {fileID: 11400000, guid: 0938b3a1c25374243857b94a2a12cce7, type: 2}
+    resultsData:
+      title: "Rendez-vous avec un m\xE9decin"
+      content: "L\u2019infirmier du p\xF4le sant\xE9 au travail m\u2019a re\xE7u
+        pour faire le point sur ma situation, mes ressentis et mes difficult\xE9s
+        au travail.\r\n\r\nIl m\u2019a ensuite orient\xE9 vers le m\xE9decin du travail
+        pour \xE9valuer les impacts sur ma sant\xE9 et envisager, si besoin, des
+        am\xE9nagements."
+      Score: 0
   - id: 3
-    title: "P\xF4le Sant\xE9 au Travail 2"
-    description: 
     quizData: {fileID: 11400000, guid: c86aba68542da4642a3990146d629933, type: 2}
-  - id: 4
-    title: "M\xE9decin du travail"
-    description: 
-    quizData: {fileID: 11400000, guid: 4d38e70a845ddf54f9469bac828c463a, type: 2}
+    resultsData:
+      title: 
+      content: 
+      Score: 0
+  endText: "Le service Sant\xE9 S\xE9curit\xE9 au Travail accompagne durablement
+    les travailleurs pour garantir leur s\xE9curit\xE9, pr\xE9server leur \xE9tat
+    sant\xE9 et am\xE9liorer leurs conditions de travail.\r\n\r\nEn faisant appel
+    au service SST comme\_Nadia, vous b\xE9n\xE9ficierez d\u2019une \xE9coute attentive,
+    d\u2019un accompagnement personnalis\xE9 et d\u2019une orientation vers les interlocuteurs
+    les plus adapt\xE9s \xE0 vos besoins. Nous vous aidons \xE0 agir \xE0 la fois
+    sur la pr\xE9vention des risques professionnels et sur le suivi de la sant\xE9
+    au travail."

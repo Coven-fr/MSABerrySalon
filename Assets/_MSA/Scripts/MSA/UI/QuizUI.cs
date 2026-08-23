@@ -82,6 +82,8 @@ public class QuizUI : GameScreen
             Destroy(button.gameObject);
 
         quizButtons.Clear();
+
+        GameplayController.instance.ShowResults();
     }
 
     private void OnEnable()
