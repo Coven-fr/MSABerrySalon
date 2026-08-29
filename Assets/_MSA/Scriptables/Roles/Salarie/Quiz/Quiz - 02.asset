@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468e71a82275fdf41b90fbeabf52565e, type: 3}
+  m_Name: Quiz - 02
+  m_EditorClassIdentifier: Assembly-CSharp::QuizData
+  question: "L\u2018infirmier.\xE8re peut  m\u2019accompagner en :"
+  answers:
+  - id: 1
+    text: "Accueillant, \xE9coutant et \xE9changeant sur mes ressentis et la r\xE9alit\xE9
+      de mes douleurs au travail."
+    isCorrect: 1
+  - id: 2
+    text: "Transmettant des conseils de pr\xE9vention sant\xE9 et d'hygi\xE8ne de
+      vie adapt\xE9s \xE0 mon poste."
+    isCorrect: 1
+  - id: 3
+    text: "R\xE9alisant les entretiens infirmiers de pr\xE9-reprise ou de suivi de
+      sant\xE9 au travail."
+    isCorrect: 1
+  - id: 4
+    text: "D\xE9cidant d\u2019am\xE9nagements ou de restrictions."
+    isCorrect: 0
+  explanation: "L\u2019infirmier\xB7\xE8re accompagne le suivi de sant\xE9, mais
+    ne remplace pas le m\xE9decin.\r\n\r\nLe m\xE9decin du travail pose un avis m\xE9dical
+    et peut d\xE9cider d\u2019am\xE9nagements ou de restrictions.\r\nL\u2019infirmier\xB7\xE8re
+    rep\xE8re, \xE9coute, conseille et oriente vers le m\xE9decin si n\xE9cessaire."

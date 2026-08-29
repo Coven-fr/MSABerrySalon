@@ -27,11 +27,11 @@ public class End : GameScreen
 
     private void OnEnable()
     {
-        endTextEvent.onEventRaised += SetText;
+        endTextEvent.onRequest += SetText;
     }
 
     private void OnDisable()
     {
-        endTextEvent.onEventRaised -= SetText;
+        endTextEvent.onRequest -= SetText;
     }
 }

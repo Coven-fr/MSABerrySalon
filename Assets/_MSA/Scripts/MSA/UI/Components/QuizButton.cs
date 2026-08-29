@@ -1,4 +1,5 @@
 using Coven.MSA.UI;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,15 +9,26 @@ public class QuizButton : MonoBehaviour
     CovenButton button;
     QuizAnswer quizAnswer;
 
+    [Header("Feedback settings")]
     [SerializeField] private Sprite defaultSprite;
     [SerializeField] private Sprite correctSprite;
     [SerializeField] private Sprite wrongSprite;
+
+    [Space(10)]
+
+    [SerializeField] TextMeshProUGUI feedbackText;
+    [SerializeField] Color correctColor;
+    [SerializeField] Color wrongColor;
+    string defaultFeedbackText;
 
     private void Awake()
     {
         button = GetComponent<CovenButton>();
 
         SetState(AnswerComponentState.Default);
+
+        defaultFeedbackText = feedbackText.text;
+        feedbackText.alpha = 0.0f;
     }
 
     public void SetState(AnswerComponentState state)
@@ -47,6 +59,26 @@ public class QuizButton : MonoBehaviour
     public QuizAnswer GetAnswer()
     {
         return quizAnswer;
+    }
+
+    public void CallCorrectFeedback(int value)
+    {
+        string text = value.ToString();
+        text = "+" + text;
+
+        feedbackText.text = defaultFeedbackText.Replace("X", text);
+        feedbackText.color = correctColor;
+        feedbackText.alpha = 255.0f;
+    }
+
+    public void CallWrongFeedback(int value)
+    {
+        string text = value.ToString();
+        text = "-" + text;
+
+        feedbackText.text = defaultFeedbackText.Replace("X", text);
+        feedbackText.color = wrongColor;
+        feedbackText.alpha = 255.0f;
     }
 
     public void Activate()

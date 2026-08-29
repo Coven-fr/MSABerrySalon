@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::IntroData
   steps:
   - messages:
-    - "Nadia, salari\xE9e viticole est en arr\xEAt de travail suite l'apparition
-      de douleurs li\xE9es \xE0 son activit\xE9 professionnelle."
-    - "Elle ressent des douleurs \xE0 l\u2019\xE9paule et au poignet. Ses gestes
+    - "Vous incarnez Nadia, salari\xE9e viticole, en arr\xEAt de travail suite \xE0
+      l'apparition de douleurs li\xE9es \xE0 son activit\xE9 professionnelle."
+    - "Vous ressentez des douleurs \xE0 l\u2019\xE9paule et au poignet. Vos gestes
       sont moins fluides et certaines postures plus contraignantes."
-    - "Elle en parle \xE0 l\u2019infirmier.\xE8re du p\xF4le Sant\xE9 au travail
-      pour savoir si son poste peut \xEAtre adapt\xE9 avant que la situation ne s\u2019aggrave."
+    - "Vous en parlez \xE0 l\u2019infirmier.\xE8re du p\xF4le Sant\xE9 au travail
+      pour savoir si votre poste peut \xEAtre adapt\xE9 avant que la situation ne
+      s\u2019aggrave."
   - messages: []
   - messages:
     - "L\u2019assistant\xB7e administratif.ve re\xE7oit la demande, identifie le

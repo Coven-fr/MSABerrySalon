@@ -4,10 +4,10 @@ using UnityEngine.Events;
 [CreateAssetMenu(fileName ="StringEvent", menuName = "Coven/Events/StringEvent")]
 public class StringEventChannel : ScriptableObject
 {
-    public UnityAction<string> onEventRaised;
+    public UnityAction<string> onRequest;
 
-    public void RaiseEvent(string value)
+    public void Request(string value)
     {
-        onEventRaised?.Invoke(value);
+        onRequest?.Invoke(value);
     }
 }

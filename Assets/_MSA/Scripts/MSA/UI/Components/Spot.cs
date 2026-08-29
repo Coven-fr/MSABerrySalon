@@ -8,12 +8,28 @@ public class Spot : MonoBehaviour, IPointerClickHandler
 
     private bool isUsed = false;
 
+    [Header("Events")]
+    [SerializeField] GameEventChannel resetEvent;
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (isUsed) return;
 
-        GameplayController.instance.SelectElement(this);
+        isUsed = GameplayController.instance.SelectElement(this);
+    }
 
-        isUsed = true;
+    void ResetSpot()
+    {
+        isUsed = false;
+    }
+
+    private void OnEnable()
+    {
+        resetEvent.onRequest += ResetSpot;
+    }
+
+    private void OnDisable()
+    {
+        resetEvent.onRequest -= ResetSpot;
     }
 }

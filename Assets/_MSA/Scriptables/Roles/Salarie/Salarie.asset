@@ -12,19 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94d7422c4f9ea9242a92694ef2c6d8a9, type: 3}
   m_Name: Salarie
   m_EditorClassIdentifier: Assembly-CSharp::RoleData
+  displayName: "SALARI\xC9.E"
   role: 0
   intro: {fileID: 11400000, guid: f6d9a9949b2b3c64295b21a23628d25b, type: 2}
   elements:
   - id: 1
-    quizData: {fileID: 11400000, guid: 884d220c4edbcf041aa9c4111f6b4add, type: 2}
+    quizData: {fileID: 11400000, guid: 978119c75f8cf344e8859732df44ce0a, type: 2}
     resultsData:
       title: "Rendez-vous avec le p\xF4le sant\xE9 au travail"
       content: "Le dossier de Nadia est d\xE9sormais enregistr\xE9 et ses droits
-        sont ouverts. Pour comprendre l'origine de ses douleurs sur l'exploitation,
-        l'agent d'accueil l'oriente vers <b>le p\xF4le sant\xE9 au travail</b>."
+        sont ouverts. Pour comprendre l'origine de ses douleurs, l'agent d'accueil
+        l'oriente vers le <b>p\xF4le sant\xE9 au travail</b>."
       Score: 0
-  - id: 2
-    quizData: {fileID: 11400000, guid: 0938b3a1c25374243857b94a2a12cce7, type: 2}
+  - id: 3
+    quizData: {fileID: 11400000, guid: 7181dc9aae904cc478fa04cc81b3e3cf, type: 2}
     resultsData:
       title: "Rendez-vous avec un m\xE9decin"
       content: "L\u2019infirmier du p\xF4le sant\xE9 au travail m\u2019a re\xE7u
@@ -33,8 +34,8 @@ MonoBehaviour:
         pour \xE9valuer les impacts sur ma sant\xE9 et envisager, si besoin, des
         am\xE9nagements."
       Score: 0
-  - id: 3
-    quizData: {fileID: 11400000, guid: c86aba68542da4642a3990146d629933, type: 2}
+  - id: 4
+    quizData: {fileID: 11400000, guid: ceb6f15263256f446b7f457a76a1b088, type: 2}
     resultsData:
       title: 
       content: 

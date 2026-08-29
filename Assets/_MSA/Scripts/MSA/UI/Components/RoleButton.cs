@@ -1,16 +1,23 @@
+using Coven.MSA.UI;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class RoleButton : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] CovenButton button;
+
+    public void SetText(string value)
     {
-        
+        button.SetText(value);
     }
 
-    // Update is called once per frame
-    void Update()
+    public void AddListener(UnityAction action)
     {
-        
+        button.onClick.AddListener(action);
+    }
+
+    public void RemoveListener(UnityAction action)
+    {
+        button.onClick.RemoveListener(action);
     }
 }

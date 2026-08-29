@@ -22,6 +22,7 @@ public class QuizUI : GameScreen
 
     [Header("Events")]
     [SerializeField] QuizEventChannel quizEvent;
+    [SerializeField] ScoreEventChannel scoreEvent;
 
     private void Start()
     {
@@ -56,12 +57,23 @@ public class QuizUI : GameScreen
         quizEvent.VerifyAnswer(button.GetAnswer());
     }
 
-    void OnResult(bool isCorrect)
+    void OnCorrectFeedback(int value)
     {
-        if (isCorrect)
-            selected.SetState(AnswerComponentState.Correct);
-        else
-            selected.SetState(AnswerComponentState.Wrong);
+        if(selected != null)
+            selected.CallCorrectFeedback(value);
+
+        selected.SetState(AnswerComponentState.Correct);
+
+        selected.Deactivate();
+        selected = null;
+    }
+
+    void OnWrongFeedback(int value)
+    {
+        if(selected != null)
+            selected.CallWrongFeedback(value);
+
+        selected.SetState(AnswerComponentState.Wrong);
 
         selected.Deactivate();
         selected = null;
@@ -89,14 +101,18 @@ public class QuizUI : GameScreen
     private void OnEnable()
     {
         quizEvent.onSet += Set;
-        quizEvent.onAnswerResult += OnResult;
         quizEvent.onEnd += OnEnd;
+
+        scoreEvent.onIncrease += OnCorrectFeedback;
+        scoreEvent.onDecrease += OnWrongFeedback;
     }
 
     private void OnDisable()
     {
         quizEvent.onSet -= Set;
-        quizEvent.onAnswerResult -= OnResult;
         quizEvent.onEnd -= OnEnd;
+
+        scoreEvent.onIncrease -= OnCorrectFeedback;
+        scoreEvent.onDecrease -= OnWrongFeedback;
     }
 }

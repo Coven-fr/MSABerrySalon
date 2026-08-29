@@ -35,9 +35,9 @@ public class GameplayController : Singleton<GameplayController>
 
     public void EndGame()
     {
-        DeactivateGameStuff();
-
         AppController.instance.BackRoleSelector();
+
+        DeactivateGameStuff();
     }
 
     void ActivateGameStuff()
@@ -56,34 +56,38 @@ public class GameplayController : Singleton<GameplayController>
         }
     }
 
-    public void SelectElement(Spot spot)
+    public bool SelectElement(Spot spot)
     {
-        foreach(var element in selectedRole.Elements)
+        if (selectedRole.Elements[spotProgression].ID == spot.ID)
         {
-            if (element.ID == spot.ID)
-            {
-                quizEvent.Set(element.QuizData);
-                currentElement = element;
-            }
+            currentElement = selectedRole.Elements[spotProgression];
+            quizEvent.Set(currentElement.QuizData);
+
+            spotProgression++;
+
+            return true;
         }
 
-        spotProgression++;
+        return false;
     }
 
-    void CheckProgression()
+    bool CheckProgression()
     {
         if (spotProgression == selectedRole.Elements.Count)
         {
-            endTextEvent.RaiseEvent(selectedRole.EndText);
+            endTextEvent.Request(selectedRole.EndText);
 
             AppController.instance.Next();
+
+            return true;
         }
+
+        return false;
     }
 
     public void ShowResults()
     {
-        resultsEvent.ShowResults(currentElement.ResultsData);
-
-        CheckProgression();
+        if(!CheckProgression())
+            resultsEvent.ShowResults(currentElement.ResultsData);
     }
 }

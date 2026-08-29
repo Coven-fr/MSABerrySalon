@@ -10,24 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 468e71a82275fdf41b90fbeabf52565e, type: 3}
-  m_Name: "Quiz - P\xF4le PRP"
+  m_Name: Quiz - 02
   m_EditorClassIdentifier: Assembly-CSharp::QuizData
   question: "Le conseiller PRP peut m\u2019accompagner en : "
   answers:
   - id: 1
-    text: "R\xE9alisant une visite de diagnostic des risques pour comprendre l'accident"
+    text: "R\xE9alisant une visite de diagnostic des risques pour comprendre l'accident."
     isCorrect: 1
   - id: 2
     text: "M\u2019aidant \xE0 mettre \xE0 jour mon Document Unique d'\xC9valuation
-      des Risques Professionnels (DUERP)"
+      des Risques Professionnels (DUERP)."
     isCorrect: 1
   - id: 3
-    text: "Suivant mon \xE9tat de sant\xE9"
+    text: "Suivant mon \xE9tat de sant\xE9."
     isCorrect: 0
   - id: 4
     text: "Accompagnant la mise en \u0153uvre d'actions de sensibilisation et de
-      formation pour l'ensemble des salari\xE9s"
+      formation pour l'ensemble des salari\xE9s."
     isCorrect: 1
-  explanation: "La d\xE9claration de l'accident est enregistr\xE9e. L'administration
-    missionne imm\xE9diatement un conseiller PRP pour investiguer directement sur
-    mon entreprise."
+  explanation: "Son r\xF4le n\u2019est pas de contr\xF4ler directement l\u2019\xE9tat
+    de sant\xE9 des adh\xE9rents. Le conseiller propose des mesures visant \xE0 am\xE9liorer
+    les conditions de travail\r\net \xE0 pr\xE9venir les risques afin d\u2019\xE9viter
+    qu\u2019ils n\u2019aient un impact sur leur sant\xE9.\r\n\r\nC\u2019est le p\xF4le
+    Sant\xE9 au Travail qui prend en charge l\u2019ensemble des actions relatives
+    \xE0 la sant\xE9 des adh\xE9rents."

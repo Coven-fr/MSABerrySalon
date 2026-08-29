@@ -142,3 +142,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Spot
   id: 0
+  resetEvent: {fileID: 11400000, guid: e2374719be2f9bd41a06f9ca2debb678, type: 2}

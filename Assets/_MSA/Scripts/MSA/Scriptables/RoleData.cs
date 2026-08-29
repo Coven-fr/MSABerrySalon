@@ -4,6 +4,9 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Role", menuName = "Coven/Data/Role")]
 public class RoleData : ScriptableObject
 {
+    [SerializeField] string displayName;
+    public string DisplayName => displayName;
+
     [SerializeField] PlayerRole role;
     public PlayerRole Role => role;
 

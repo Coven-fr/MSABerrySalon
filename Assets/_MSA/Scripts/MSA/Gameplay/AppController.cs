@@ -7,12 +7,17 @@ public class AppController : Singleton<AppController>
 
     [SerializeField] List<RoleData> rolesData;
 
+    [SerializeField] RoleSelector selector;
+
     [Header("Events")]
     [SerializeField] IntroEventChannel introEvent;
+    [SerializeField] GameEventChannel resetEvent;
 
     private void Start()
     {
         SwitchGameState(AppState.Home);
+
+        selector.Set(rolesData);
     }
 
     public void Next()
@@ -54,6 +59,13 @@ public class AppController : Singleton<AppController>
 
     public void BackRoleSelector()
     {
+        resetEvent.Request();
+
         SwitchGameState(AppState.RoleSelector);
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

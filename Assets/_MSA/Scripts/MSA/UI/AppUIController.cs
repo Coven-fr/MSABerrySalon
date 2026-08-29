@@ -1,4 +1,5 @@
 using Coven.MSA.Core.UI;
+using Coven.MSA.UI;
 using UnityEngine;
 
 public class AppUIController : Singleton<AppUIController>
@@ -8,6 +9,8 @@ public class AppUIController : Singleton<AppUIController>
     [SerializeField] GameScreen home;
     [SerializeField] GameScreen explanation;
 
+    [SerializeField] CovenButton quitButton;
+
     [Header("Game UI")]
     [SerializeField] CanvasGroup gameUI;
     [SerializeField] GameScreen roleSelector;
@@ -15,6 +18,14 @@ public class AppUIController : Singleton<AppUIController>
     [SerializeField] GameScreen end;
 
     GameScreen current;
+
+    private void Start()
+    {
+        quitButton.onClick.AddListener(() =>
+        {
+            AppController.instance.Quit();
+        });
+    }
 
     public void UpdateGameScreen()
     {
