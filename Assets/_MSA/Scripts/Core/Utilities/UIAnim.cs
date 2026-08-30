@@ -2,7 +2,7 @@ using DG.Tweening;
 using TMPro;
 using UnityEngine;
 
-namespace Coven.Omexom.Core.Utilities
+namespace Coven.MSA.Core.Utilities
 {
     public static class UIAnim
     {
@@ -98,7 +98,21 @@ namespace Coven.Omexom.Core.Utilities
             return seq;
         }
 
-        public static Sequence PenaltyTextAnim(TMP_Text text)
+        public static Sequence TextFadeInAnim(TMP_Text text)
+        {
+            text.DOKill();
+
+            Sequence seq = DOTween.Sequence();
+
+            text.alpha = 0f;
+
+            seq.Append(PunchScaleAnim((RectTransform)text.transform, -0.3f, 4, 1f));
+            seq.Join(text.DOFade(1, 0.5f));
+
+            return seq;
+        }
+
+        public static Sequence TextFadeOutAnim(TMP_Text text)
         {
             text.DOKill();
 

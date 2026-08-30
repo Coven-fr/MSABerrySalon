@@ -7,13 +7,13 @@ public class GameplayController : Singleton<GameplayController>
     ElementContent currentElement;
     int spotProgression;
     int spotScore;
-    int gameScore;
 
     [SerializeField] List<GameObject> gameElements;
 
     [Header("Events")]
     [SerializeField] QuizEventChannel quizEvent;
     [SerializeField] ResultsEventChannel resultsEvent;
+    [SerializeField] GameEventChannel endGameEvent;
     [SerializeField] StringEventChannel endTextEvent;    
 
     private void Start()
@@ -35,9 +35,11 @@ public class GameplayController : Singleton<GameplayController>
 
     public void EndGame()
     {
-        AppController.instance.BackRoleSelector();
+        AppController.instance.EndGame();
 
         DeactivateGameStuff();
+
+        endGameEvent.Request();
     }
 
     void ActivateGameStuff()

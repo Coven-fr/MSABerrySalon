@@ -15,6 +15,11 @@ public class ScoreUI : MonoBehaviour
         score.onScoreUpdated += UpdateScore;
     }
 
+    private void Start()
+    {
+        UpdateScore();
+    }
+
     void UpdateScore()
     {
         scoreText.text = score.GetScore().ToString();

@@ -15,6 +15,7 @@ public class AppUIController : Singleton<AppUIController>
     [SerializeField] CanvasGroup gameUI;
     [SerializeField] GameScreen roleSelector;
     [SerializeField] GameScreen intro;
+    [SerializeField] GameScreen ingame;
     [SerializeField] GameScreen end;
 
     GameScreen current;
@@ -29,7 +30,7 @@ public class AppUIController : Singleton<AppUIController>
 
     public void UpdateGameScreen()
     {
-        switch (AppController.instance.GameState)
+        switch (AppController.instance.AppState)
         {
             case AppState.Home:
                 ShowHome();
@@ -44,7 +45,7 @@ public class AppUIController : Singleton<AppUIController>
                 ShowIntro();
                 break;
             case AppState.Game:
-
+                ShowIngame();
                 break;
             case AppState.End:
                 ShowEnd();
@@ -52,31 +53,36 @@ public class AppUIController : Singleton<AppUIController>
         }
     }
 
-    public void ShowHome()
+    void ShowHome()
     {
         SwitchGameScreen(home);
 
         SwitchGameMenu();
     }
 
-    public void ShowExplanation() 
+    void ShowExplanation() 
     {
         SwitchGameScreen(explanation);
     }
 
-    public void ShowRoleSelector()
+    void ShowRoleSelector()
     {
         SwitchGameScreen(roleSelector);
 
         SwitchGameUI();
     }
 
-    public void ShowIntro()
+    void ShowIntro()
     {
         SwitchGameScreen(intro);
     }
 
-    public void ShowEnd()
+    void ShowIngame()
+    {
+        SwitchGameScreen(ingame);
+    }
+
+    void ShowEnd()
     {
         SwitchGameScreen(end);
     }

@@ -1,3 +1,4 @@
+using Coven.MSA.Core.Utilities;
 using Coven.MSA.UI;
 using TMPro;
 using UnityEngine;
@@ -68,7 +69,8 @@ public class QuizButton : MonoBehaviour
 
         feedbackText.text = defaultFeedbackText.Replace("X", text);
         feedbackText.color = correctColor;
-        feedbackText.alpha = 255.0f;
+
+        UIAnim.TextFadeInAnim(feedbackText);
     }
 
     public void CallWrongFeedback(int value)
@@ -78,7 +80,8 @@ public class QuizButton : MonoBehaviour
 
         feedbackText.text = defaultFeedbackText.Replace("X", text);
         feedbackText.color = wrongColor;
-        feedbackText.alpha = 255.0f;
+
+        UIAnim.TextFadeInAnim(feedbackText);
     }
 
     public void Activate()

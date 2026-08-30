@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class AppController : Singleton<AppController>
 {
-    public AppState GameState { get; private set; }
+    public AppState AppState { get; private set; }
 
     [SerializeField] List<RoleData> rolesData;
 
@@ -15,28 +15,28 @@ public class AppController : Singleton<AppController>
 
     private void Start()
     {
-        SwitchGameState(AppState.Home);
+        SwitchAppState(AppState.Home);
 
         selector.Set(rolesData);
     }
 
     public void Next()
     {
-        if (GameState == AppState.Home)
-            SwitchGameState(AppState.Explanation);
-        else if (GameState == AppState.Explanation)
-            SwitchGameState(AppState.RoleSelector);
-        else if (GameState == AppState.Intro)
-            SwitchGameState(AppState.Game);
-        else if (GameState == AppState.Game)
-            SwitchGameState(AppState.End);
+        if (AppState == AppState.Home)
+            SwitchAppState(AppState.Explanation);
+        else if (AppState == AppState.Explanation)
+            SwitchAppState(AppState.RoleSelector);
+        else if (AppState == AppState.Intro)
+            SwitchAppState(AppState.Game);
+        else if (AppState == AppState.Game)
+            SwitchAppState(AppState.End);
     }
 
-    void SwitchGameState(AppState newState)
+    void SwitchAppState(AppState newState)
     {
-        GameState = newState;
+        AppState = newState;
 
-        if(GameState == AppState.Game)
+        if(AppState == AppState.Game)
             GameplayController.instance.StartGame();
 
         AppUIController.instance.UpdateGameScreen();
@@ -52,16 +52,16 @@ public class AppController : Singleton<AppController>
 
                 introEvent.Set(roleData.Intro);
 
-                SwitchGameState(AppState.Intro);
+                SwitchAppState(AppState.Intro);
             }
         }
     }
 
-    public void BackRoleSelector()
+    public void EndGame()
     {
         resetEvent.Request();
 
-        SwitchGameState(AppState.RoleSelector);
+        SwitchAppState(AppState.RoleSelector);
     }
 
     public void Quit()

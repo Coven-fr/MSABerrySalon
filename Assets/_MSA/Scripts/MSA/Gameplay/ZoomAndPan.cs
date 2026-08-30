@@ -48,7 +48,6 @@ public class ZoomAndPan : GameComponent
     bool isPinching = false;
 
     Vector2 lastMousePanPosition;
-    bool isMousePanning;
 
     void Awake()
     {
@@ -82,8 +81,6 @@ public class ZoomAndPan : GameComponent
         if (Mouse.current.middleButton.wasPressedThisFrame)
         {
             lastMousePanPosition = Mouse.current.position.ReadValue();
-
-            isMousePanning = true;
         }
 
         if (Mouse.current.middleButton.isPressed)
@@ -95,11 +92,6 @@ public class ZoomAndPan : GameComponent
 
             if (delta != Vector2.zero)
                 HandlePan(delta);
-        }
-
-        if (Mouse.current.middleButton.wasReleasedThisFrame)
-        {
-            isMousePanning = false;
         }
     }
 

@@ -9,6 +9,7 @@ public class Score : MonoBehaviour
 
     [Header("Events")]
     [SerializeField] ScoreEventChannel scoreEvent;
+    [SerializeField] GameEventChannel endGameEvent;
 
     void Increase(int points)
     {
@@ -27,6 +28,8 @@ public class Score : MonoBehaviour
     void ResetScore()
     {
         score = 0;
+
+        onScoreUpdated?.Invoke();
     }
 
     public int GetScore()
@@ -38,13 +41,19 @@ public class Score : MonoBehaviour
     {
         scoreEvent.onIncrease += Increase;
         scoreEvent.onDecrease += Decrease;
+        scoreEvent.onGet += GetScore;
         scoreEvent.onReset += ResetScore;
+
+        endGameEvent.onRequest += ResetScore;
     }
 
     private void OnDisable()
     {
         scoreEvent.onIncrease -= Increase;
         scoreEvent.onDecrease -= Decrease;
+        scoreEvent.onGet -= GetScore;
         scoreEvent.onReset -= ResetScore;
+
+        endGameEvent.onRequest -= ResetScore;
     }
 }

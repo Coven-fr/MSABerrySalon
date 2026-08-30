@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class End : GameScreen
 {
+    [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] TextMeshProUGUI bodyText;
     [SerializeField] CovenButton continueButton;
 
     [Header("Events")]
+    [SerializeField] ScoreEventChannel scoreEvent;
     [SerializeField] StringEventChannel endTextEvent;
 
     private void Start()
@@ -17,6 +19,9 @@ public class End : GameScreen
 
     void SetText(string text)
     {
+        int score = scoreEvent.Get;
+        scoreText.text = score.ToString() + " / 60 pts";
+
         bodyText.text = text;
     }
 
