@@ -13,6 +13,7 @@ public class GameplayController : Singleton<GameplayController>
     [Header("Events")]
     [SerializeField] QuizEventChannel quizEvent;
     [SerializeField] ResultsEventChannel resultsEvent;
+    [SerializeField] ZoomEventChannel zoomEvent;
     [SerializeField] GameEventChannel endGameEvent;
     [SerializeField] StringEventChannel endTextEvent;    
 
@@ -66,6 +67,9 @@ public class GameplayController : Singleton<GameplayController>
             quizEvent.Set(currentElement.QuizData);
 
             spotProgression++;
+            spotScore = 0;
+
+            zoomEvent.ZoomTarget(spot.ZoomTarget);
 
             return true;
         }
@@ -87,9 +91,21 @@ public class GameplayController : Singleton<GameplayController>
         return false;
     }
 
+    public void UpdateSpotScore(int value)
+    {
+        spotScore = value;
+    }
+
     public void ShowResults()
     {
+        zoomEvent.ResetZoom();
+
+        ResultsData results = new(currentElement.ResultsData)
+        {
+            Score = spotScore
+        };
+
         if(!CheckProgression())
-            resultsEvent.ShowResults(currentElement.ResultsData);
+            resultsEvent.ShowResults(results);
     }
 }

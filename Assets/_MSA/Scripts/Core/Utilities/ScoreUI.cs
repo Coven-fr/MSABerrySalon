@@ -17,10 +17,10 @@ public class ScoreUI : MonoBehaviour
 
     private void Start()
     {
-        UpdateScore();
+        UpdateScore(0);
     }
 
-    void UpdateScore()
+    void UpdateScore(int value)
     {
         scoreText.text = score.GetScore().ToString();
     }

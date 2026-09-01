@@ -38,6 +38,11 @@ public class GameMenu : GameScreen
 
     void Open()
     {
+        if(AppController.instance.AppState == AppState.RoleSelector)
+            roleSelectorButton.gameObject.SetActive(false);
+        else if (AppController.instance.AppState == AppState.Game)
+            roleSelectorButton.gameObject.SetActive(true);
+
         Show();
     }
 

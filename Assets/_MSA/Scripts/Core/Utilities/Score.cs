@@ -5,7 +5,7 @@ public class Score : MonoBehaviour
 {
     int score;
 
-    public UnityAction onScoreUpdated;
+    public UnityAction<int> onScoreUpdated;
 
     [Header("Events")]
     [SerializeField] ScoreEventChannel scoreEvent;
@@ -15,21 +15,21 @@ public class Score : MonoBehaviour
     {
         score += points;
 
-        onScoreUpdated?.Invoke();
+        onScoreUpdated?.Invoke(points);
     }
 
     void Decrease(int points)
     {
         score -= points;
 
-        onScoreUpdated?.Invoke();
+        onScoreUpdated?.Invoke(-points);
     }
 
     void ResetScore()
     {
         score = 0;
 
-        onScoreUpdated?.Invoke();
+        onScoreUpdated?.Invoke(0);
     }
 
     public int GetScore()

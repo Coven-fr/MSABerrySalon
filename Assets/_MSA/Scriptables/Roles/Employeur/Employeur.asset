@@ -21,9 +21,8 @@ MonoBehaviour:
     resultsData:
       title: "Rendez-vous avec le p\xF4le Pr\xE9vention des Risques Professionnels
         (PRP)"
-      content: "La d\xE9claration de l'accident est enregistr\xE9e. L'administration
-        missionne imm\xE9diatement un conseiller PRP pour investiguer directement
-        sur mon entreprise."
+      content: "Votre demande est enregistr\xE9e. \r\nLe p\xF4le PRP missionne un
+        conseiller PRP pour me venir en aide."
       Score: 0
   - id: 2
     quizData: {fileID: 11400000, guid: 0938b3a1c25374243857b94a2a12cce7, type: 2}

@@ -7,6 +7,8 @@ public class Quiz : MonoBehaviour
 
     List<QuizAnswer> correctAnswerList = new();
 
+    int score;
+
     [Range(0f, 100f)]
     [SerializeField] int scoreBonus = 5;
     [Range(0f, 100f)]
@@ -26,15 +28,21 @@ public class Quiz : MonoBehaviour
             if(answer.IsCorrect)
                 correctAnswerList.Add(answer);
         }
+
+        score = 0;
     }
 
     void Verify(QuizAnswer answer)
     {
         if (answer.IsCorrect)
+        {
             scoreEvent.Increase(scoreBonus);
+            score += scoreBonus;
+        }
         else
         {
             scoreEvent.Decrease(scoreMalus);
+            score -= scoreMalus;
             feedbackEvent.Request(quizData.Explanation);
         }
 
@@ -42,7 +50,10 @@ public class Quiz : MonoBehaviour
             correctAnswerList.Remove(answer);
 
         if(correctAnswerList.Count == 0)
+        {
             quizEvent.End();
+            GameplayController.instance.UpdateSpotScore(score);
+        }
     }
 
     private void OnEnable()

@@ -6,6 +6,7 @@ public class Results : GameScreen
 {
     [SerializeField] TextMeshProUGUI headerText;
     [SerializeField] TextMeshProUGUI bodyText;
+    [SerializeField] TextMeshProUGUI scoreText;
     [SerializeField] CovenButton continueButton;
 
 
@@ -21,6 +22,7 @@ public class Results : GameScreen
     {
         headerText.text = data.Title;
         bodyText.text = data.Content;
+        scoreText.text = data.Score.ToString() + " pts";
 
         Show();
     }
@@ -57,4 +59,10 @@ public class ResultsData
 
     [HideInInspector]
     public int Score;
+
+    public ResultsData(ResultsData data)
+    {
+        title = data.title;
+        content = data.content;
+    }
 }

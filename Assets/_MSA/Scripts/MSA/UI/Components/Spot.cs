@@ -6,6 +6,9 @@ public class Spot : MonoBehaviour, IPointerClickHandler
     [SerializeField] ElementID id;
     public ElementID ID => id;
 
+    [SerializeField] Transform zoomTarget;
+    public Transform ZoomTarget => zoomTarget;
+
     private bool isUsed = false;
 
     [Header("Events")]

@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -20,6 +21,13 @@ public class ZoomAndPan : GameComponent
     float previousZoom;
     bool isZoomMin;
     bool isZoomMax;
+
+    [Space(10)]
+
+    [Header("Targeted Zoom")]
+    [SerializeField] float targetedZoomSpeed = 3f;
+    [SerializeField] float zoomLevel = 1f;
+    Coroutine targetedZoomCoroutine;
 
     [Space(10)]
 
@@ -336,13 +344,64 @@ public class ZoomAndPan : GameComponent
         return (first + second) / 2f;
     }
 
-    public void ResetZoom()
+    void ZoomToTarget(Transform focusTarget)
     {
-        cam.transform.position = initialCamPosition;
-        cam.orthographicSize = initialCamProjection;
+        if (focusTarget == null || cam == null) return;
 
-        previousZoom = initialCamProjection;
+        Vector3 targetPosition = new Vector3(focusTarget.position.x, focusTarget.position.y, cam.transform.position.z);
+        float clampedZoom = Mathf.Clamp(zoomLevel, minZoom, maxZoom);
+
+        StartTargetedZoom(targetPosition, clampedZoom);
+    }
+
+    void StartTargetedZoom(Vector3 targetPosition, float targetZoom)
+    {
+        if (targetedZoomCoroutine != null)
+            StopCoroutine(targetedZoomCoroutine);
+
+        targetedZoomCoroutine = StartCoroutine(ZoomToTargetRoutine(targetPosition, targetZoom));
+    }
+
+    IEnumerator ZoomToTargetRoutine(Vector3 targetPosition, float targetZoom)
+    {
+        while (Mathf.Abs(cam.orthographicSize - targetZoom) > 0.01f
+            || Vector3.Distance(cam.transform.position, targetPosition) > 0.01f)
+        {
+            float t = targetedZoomSpeed * Time.deltaTime;
+
+            cam.orthographicSize = Mathf.Lerp(cam.orthographicSize, targetZoom, t);
+            cam.transform.position = Vector3.Lerp(cam.transform.position, targetPosition, t);
+
+            UpdateZoomState();
+            onZoom?.Invoke();
+
+            yield return null;
+        }
+
+        cam.orthographicSize = targetZoom;
+        cam.transform.position = targetPosition;
+        previousZoom = targetZoom;
 
         UpdateZoomState();
+        onZoom?.Invoke();
+
+        targetedZoomCoroutine = null;
+    }
+
+    public void ResetZoom()
+    {
+        StartTargetedZoom(initialCamPosition, initialCamProjection);
+    }
+
+    private void OnEnable()
+    {
+        zoomEvent.onZoomTarget += ZoomToTarget;
+        zoomEvent.onResetZoom += ResetZoom;
+    }
+
+    private void OnDisable()
+    {
+        zoomEvent.onZoomTarget -= ZoomToTarget;
+        zoomEvent.onResetZoom -= ResetZoom;
     }
 }
