@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -5,6 +6,13 @@ public class Spot : MonoBehaviour, IPointerClickHandler
 {
     [SerializeField] ElementID id;
     public ElementID ID => id;
+
+    [Space(10)]
+
+    [SerializeField] List<GameObject> characters;
+    int current;
+
+    [Space(10)]
 
     [SerializeField] Transform zoomTarget;
     public Transform ZoomTarget => zoomTarget;
@@ -14,6 +22,11 @@ public class Spot : MonoBehaviour, IPointerClickHandler
     [Header("Events")]
     [SerializeField] GameEventChannel resetEvent;
 
+    void Awake()
+    {
+        ResetSpot();
+    }
+
     public void OnPointerClick(PointerEventData eventData)
     {
         if (isUsed) return;
@@ -21,9 +34,23 @@ public class Spot : MonoBehaviour, IPointerClickHandler
         isUsed = GameplayController.instance.SelectElement(this);
     }
 
+    public void ActivateCharacter()
+    {
+        if (current < characters.Count)
+        {
+            characters[current].SetActive(true);
+            current++;
+        }
+    }
+
     void ResetSpot()
     {
         isUsed = false;
+
+        foreach (var character in characters)
+        {
+            character.SetActive(false);
+        }
     }
 
     private void OnEnable()

@@ -38,6 +38,7 @@ public class Quiz : MonoBehaviour
         {
             scoreEvent.Increase(scoreBonus);
             score += scoreBonus;
+            GameplayController.instance.UpdateSpotFeedback();
         }
         else
         {

@@ -4,6 +4,7 @@ using UnityEngine;
 public class GameplayController : Singleton<GameplayController>
 {
     RoleData selectedRole;
+    Spot currentSpot;
     ElementContent currentElement;
     int spotProgression;
     int spotScore;
@@ -63,6 +64,7 @@ public class GameplayController : Singleton<GameplayController>
     {
         if (selectedRole.Elements[spotProgression].ID == spot.ID)
         {
+            currentSpot = spot;
             currentElement = selectedRole.Elements[spotProgression];
             quizEvent.Set(currentElement.QuizData);
 
@@ -94,6 +96,11 @@ public class GameplayController : Singleton<GameplayController>
     public void UpdateSpotScore(int value)
     {
         spotScore = value;
+    }
+
+    public void UpdateSpotFeedback()
+    {
+        currentSpot.ActivateCharacter();
     }
 
     public void ShowResults()
