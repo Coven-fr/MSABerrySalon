@@ -10,19 +10,19 @@ public class End : GameScreen
 
     [Header("Events")]
     [SerializeField] ScoreEventChannel scoreEvent;
-    [SerializeField] StringEventChannel endTextEvent;
+    [SerializeField] EndEventChannel endEvent;
 
     private void Start()
     {
         continueButton.onClick.AddListener(Close);
     }
 
-    void SetText(string text)
+    void Set(EndData data)
     {
         int score = scoreEvent.Get;
-        scoreText.text = score.ToString() + " / 60 pts";
+        scoreText.text = score.ToString() + " / " + data.maxScore.ToString() + " pts";
 
-        bodyText.text = text;
+        bodyText.text = data.text;
     }
 
     void Close()
@@ -32,11 +32,17 @@ public class End : GameScreen
 
     private void OnEnable()
     {
-        endTextEvent.onRequest += SetText;
+        endEvent.onSet += Set;
     }
 
     private void OnDisable()
     {
-        endTextEvent.onRequest -= SetText;
+        endEvent.onSet -= Set;
     }
+}
+
+public class EndData
+{
+    public string text;
+    public int maxScore;
 }

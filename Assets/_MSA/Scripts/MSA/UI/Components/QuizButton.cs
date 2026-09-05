@@ -70,7 +70,7 @@ public class QuizButton : MonoBehaviour
         feedbackText.text = defaultFeedbackText.Replace("X", text);
         feedbackText.color = correctColor;
 
-        UIAnim.TextFadeInAnim(feedbackText);
+        TweenUtilities.TextFadeInAnim(feedbackText);
     }
 
     public void CallWrongFeedback(int value)
@@ -81,7 +81,7 @@ public class QuizButton : MonoBehaviour
         feedbackText.text = defaultFeedbackText.Replace("X", text);
         feedbackText.color = wrongColor;
 
-        UIAnim.TextFadeInAnim(feedbackText);
+        TweenUtilities.TextFadeInAnim(feedbackText);
     }
 
     public void Activate()

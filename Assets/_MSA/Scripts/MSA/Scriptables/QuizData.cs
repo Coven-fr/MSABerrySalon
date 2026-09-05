@@ -16,4 +16,17 @@ public class QuizData : ScriptableObject
     [TextArea(2, 10)]
     [SerializeField] string explanation;
     public string Explanation => explanation;
+
+    public int GetCorrectAnswersCount()
+    {
+        int count = 0;
+
+        foreach (QuizAnswer answer in answers)
+        {
+            if(answer.IsCorrect)
+                count++;
+        }
+
+        return count;
+    }
 }

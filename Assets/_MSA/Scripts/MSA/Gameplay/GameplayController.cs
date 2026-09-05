@@ -8,6 +8,7 @@ public class GameplayController : Singleton<GameplayController>
     ElementContent currentElement;
     int spotProgression;
     int spotScore;
+    int maxScore;
 
     [SerializeField] List<GameObject> gameElements;
 
@@ -15,8 +16,8 @@ public class GameplayController : Singleton<GameplayController>
     [SerializeField] QuizEventChannel quizEvent;
     [SerializeField] ResultsEventChannel resultsEvent;
     [SerializeField] ZoomEventChannel zoomEvent;
+    [SerializeField] EndEventChannel endEvent;
     [SerializeField] GameEventChannel endGameEvent;
-    [SerializeField] StringEventChannel endTextEvent;    
 
     private void Start()
     {
@@ -33,6 +34,7 @@ public class GameplayController : Singleton<GameplayController>
         ActivateGameStuff();
 
         spotProgression = 0;
+        maxScore = 0;
     }
 
     public void EndGame()
@@ -83,7 +85,13 @@ public class GameplayController : Singleton<GameplayController>
     {
         if (spotProgression == selectedRole.Elements.Count)
         {
-            endTextEvent.Request(selectedRole.EndText);
+            EndData endData = new EndData()
+            {
+                text = selectedRole.EndText,
+                maxScore = maxScore
+            };
+
+            endEvent.Set(endData);
 
             AppController.instance.Next();
 
@@ -93,9 +101,10 @@ public class GameplayController : Singleton<GameplayController>
         return false;
     }
 
-    public void UpdateSpotScore(int value)
+    public void UpdateSpotAndMaxScore(int value, int maxValue)
     {
         spotScore = value;
+        maxScore += maxValue; 
     }
 
     public void UpdateSpotFeedback()

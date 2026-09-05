@@ -1,6 +1,8 @@
+using Coven.MSA.Core.Utilities;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.U2D;
 
 public class Spot : MonoBehaviour, IPointerClickHandler
 {
@@ -9,7 +11,7 @@ public class Spot : MonoBehaviour, IPointerClickHandler
 
     [Space(10)]
 
-    [SerializeField] List<GameObject> characters;
+    [SerializeField] List<SpriteRenderer> characters;
     int current;
 
     [Space(10)]
@@ -38,7 +40,7 @@ public class Spot : MonoBehaviour, IPointerClickHandler
     {
         if (current < characters.Count)
         {
-            characters[current].SetActive(true);
+            TweenUtilities.Appear(characters[current]);
             current++;
         }
     }
@@ -49,7 +51,7 @@ public class Spot : MonoBehaviour, IPointerClickHandler
 
         foreach (var character in characters)
         {
-            character.SetActive(false);
+            character.color = new Color(character.color.r, character.color.g, character.color.b, 0f); ;
         }
     }
 

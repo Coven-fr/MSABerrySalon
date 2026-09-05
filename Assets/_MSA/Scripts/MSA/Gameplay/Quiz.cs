@@ -52,8 +52,10 @@ public class Quiz : MonoBehaviour
 
         if(correctAnswerList.Count == 0)
         {
+            int maxScore = quizData.GetCorrectAnswersCount() * scoreBonus;
+
             quizEvent.End();
-            GameplayController.instance.UpdateSpotScore(score);
+            GameplayController.instance.UpdateSpotAndMaxScore(score, maxScore);
         }
     }
 
